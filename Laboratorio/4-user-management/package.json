@@ -1,0 +1,52 @@
+{
+    "name": "user-management",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Gestiona usuarios de una aplicación web.",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js",
+        "lint": "eslint src/**/*.js --fix",
+        "prettier": "prettier --write .",
+        "prepare": "husky install",
+        "postinstall": "npm run prepare"
+    },
+    "author": "LGM",
+    "license": "MIT",
+    "dependencies": {
+        "@sinclair/typebox": "^0.25.21",
+        "ajv": "^8.12.0",
+        "ajv-errors": "^3.0.0",
+        "ajv-formats": "^2.1.1",
+        "bcrypt": "^5.1.0",
+        "dotenv": "16.0.3",
+        "express": "^4.18.2",
+        "jose": "^4.11.4",
+        "mongoose": "^6.9.1"
+    },
+    "devDependencies": {
+        "eslint": "8.26.0",
+        "eslint-config-prettier": "8.5.0",
+        "eslint-config-standard": "17.0.0",
+        "eslint-plugin-import": "2.26.0",
+        "eslint-plugin-n": "15.3.0",
+        "eslint-plugin-promise": "6.1.1",
+        "husky": "8.0.1",
+        "lint-staged": "13.0.3",
+        "nodemon": "2.0.20",
+        "prettier": "2.7.1"
+    },
+    "imports": {
+        "#Config/*": "./src/config/*",
+        "#Constants/*": "./src/constants/*",
+        "#Controllers/*": "./src/controllers/*",
+        "#Dto/*": "./src/dto/*",
+        "#Routes/*": "./src/routes/*",
+        "#Schemas/*": "./src/schemas/*",
+        "#Utils/*": "./src/utils/*"
+    },
+    "lint-staged": {
+        "*.js": "eslint --fix",
+        "*.{js,md}": "prettier --write"
+    }
+}

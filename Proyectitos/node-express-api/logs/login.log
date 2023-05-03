@@ -1,0 +1,1408 @@
+
+Request: POST /api/auth/login at Wed Mar 08 2023 13:51:04 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luisdemo@gmail.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NjgwZjgwNmM2ZjA2MzVkMjAyYTciLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTY3ODI5NDI2NCwiZXhwIjoxNjc4MzAxNDY0fQ.TBytuQqcV2sTN9A8XaLc7T6JZfXkC_2v2MR6CkPnLdU",
+		"user": {
+			"_id": "6407680f806c6f0635d202a7",
+			"name": "Luis Ge",
+			"email": "luisdemo@gmail.com",
+			"role": [
+				"admin"
+			]
+		}
+	}
+}
+Response: 200 452.517 ms 
+
+Request: POST /api/auth/login at Wed Mar 08 2023 16:54:00 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luisdemo@gmail.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NjgwZjgwNmM2ZjA2MzVkMjAyYTciLCJyb2xlIjpbImFkbWluIl0sImlhdCI6MTY3ODMwNTI0MCwiZXhwIjoxNjc4MzEyNDQwfQ.XFSS5W6GV2GdrFZZZ8KY1V16KqL7qvXvJVr3EScB3E4",
+		"user": {
+			"_id": "6407680f806c6f0635d202a7",
+			"name": "Luis Ge",
+			"email": "luisdemo@gmail.com",
+			"role": [
+				"admin"
+			]
+		}
+	}
+}
+Response: 200 471.606 ms 
+
+Request: POST /api/auth/login at Wed Mar 08 2023 16:55:15 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luisdemo@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 10039.019 ms 
+
+Request: POST /api/auth/login at Wed Mar 08 2023 16:58:24 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luisdemo@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 10036.756 ms 
+
+Request: POST /api/auth/login at Wed Mar 08 2023 17:00:07 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luisdemo@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 10063.812 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:49:02 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 514.429 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:50:12 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 418.976 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:51:18 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 818.870 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:52:51 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 473.482 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:53:17 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 481.435 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:55:08 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 562.573 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:56:00 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 482.487 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:56:57 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 670.266 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 13:58:24 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBhMDFlNTA3M2NhNDZlNzYyMzRjMDIiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc4MzgxMTA0LCJleHAiOjE2NzgzODgzMDR9.hpQTQYiEcf18PcjjjR8AUsTAuEkamSfP8znvdE2yjNk",
+		"user": {
+			"_id": "640a01e5073ca46e76234c02",
+			"name": "Pedro",
+			"email": "Pedro@gmail.com",
+			"role": [
+				"user"
+			]
+		}
+	}
+}
+Response: 200 478.160 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 14:05:15 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBhMDFlNTA3M2NhNDZlNzYyMzRjMDIiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc4MzgxNTE1LCJleHAiOjE2NzgzODg3MTV9.EJfrSLANvDUVxrwjJhgE3mh7-CsKhFt26AIrgjaO7EU",
+		"user": {
+			"_id": "640a01e5073ca46e76234c02",
+			"name": "Pedro",
+			"email": "Pedro@gmail.com",
+			"role": [
+				"user"
+			]
+		}
+	}
+}
+Response: 200 465.186 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 14:20:57 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 19.427 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 14:21:06 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 8.836 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 14:23:27 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6bnVsbCwiaWF0IjoxNjc4MzgyNjA3LCJleHAiOjE2NzgzODk4MDd9.rPZleGwPpmuAkIfQWkhLfZ0I36Cqe0B8IhNNPF9vYWY",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": null,
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 405.029 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 14:26:06 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6bnVsbCwiaWF0IjoxNjc4MzgyNzY2LCJleHAiOjE2NzgzODk5NjZ9.sB8C8ByOmbqWOXWknqxtsD22KmhekguRlUim2mHRbQ4",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": null,
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 370.652 ms 
+
+Request: POST /api/auth/login at Thu Mar 09 2023 14:29:25 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4MzgyOTY1LCJleHAiOjE2NzgzOTAxNjV9.rC-JaLv_hCsFjIw2epjx8VoOCRAgcY--SpBqsP2Mzxw",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": "admin",
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 388.567 ms 
+
+Request: POST /api/auth/login at Fri Mar 10 2023 14:06:21 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 127.132 ms 
+
+Request: POST /api/auth/login at Fri Mar 10 2023 14:07:11 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 72.449 ms 
+
+Request: POST /api/auth/login at Fri Mar 10 2023 14:08:37 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 130.378 ms 
+
+Request: POST /api/auth/login at Fri Mar 10 2023 14:10:53 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBhMGUyOTM0NjRkZjVmMGNlMDMwMWQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc4NDY4MjUzLCJleHAiOjE2Nzg0NzU0NTN9.1vGEHbSY4Y0a2yEk9xua6uo6f7rfIdnwJkRDtP1bu0M",
+		"user": {
+			"_id": "640a0e293464df5f0ce0301d",
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-09T16:49:45.134Z",
+			"updatedAt": "2023-03-09T16:49:45.134Z"
+		}
+	}
+}
+Response: 200 499.437 ms 
+
+Request: POST /api/auth/login at Fri Mar 10 2023 14:26:37 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4NDY5MTk3LCJleHAiOjE2Nzg0NzYzOTd9.kGRfLbMVf2tMsTxHiuy_Mo6rRzd5CTFz8hsf_MzdMc0",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": "admin",
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 554.316 ms 
+
+Request: POST /api/auth/login at Tue Mar 14 2023 19:18:03 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDBhMGUyOTM0NjRkZjVmMGNlMDMwMWQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc4ODMyMjgzLCJleHAiOjE2Nzg4Mzk0ODN9.kxKUMMDj0_ifLygoXla_5Wv_gASXYFLntYayiVRH0YU",
+		"user": {
+			"_id": "640a0e293464df5f0ce0301d",
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-09T16:49:45.134Z",
+			"updatedAt": "2023-03-09T16:49:45.134Z"
+		}
+	}
+}
+Response: 200 471.741 ms 
+
+Request: POST /api/auth/login at Tue Mar 14 2023 20:06:26 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4ODM1MTg2LCJleHAiOjE2Nzg4NDIzODZ9.octr3d3ATPaAFH6UblAe14vAyyVBNrZJ7JLOcTibFZE",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": "admin",
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 724.896 ms 
+
+Request: POST /api/auth/login at Tue Mar 14 2023 20:36:05 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"error": "ERROR_LOGIN_USER"
+}
+Response: 403 19.761 ms 
+
+Request: POST /api/auth/login at Tue Mar 14 2023 20:36:46 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "Pedro@gmail12.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc4ODM3MDA2LCJleHAiOjE2Nzg4NDQyMDZ9.4xE56HxMKBQznZaEw6y72_Wm-ZHFdZAftGLLvYTsIVs",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": "admin",
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 464.851 ms 
+
+Request: POST /api/auth/login at Tue Mar 14 2023 20:37:54 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis12@gmail.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDExMDU0N2ZiNWYxZDkwNDg4YjA0NGEiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc4ODM3MDc0LCJleHAiOjE2Nzg4NDQyNzR9.t5Sxq3NZHW5OfcQvYsM4uxggaLh1WWS88FS1NJ3XPYs",
+		"user": {
+			"_id": "64110547fb5f1d90488b044a",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis12@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-14T23:37:43.221Z",
+			"updatedAt": "2023-03-14T23:37:43.221Z"
+		}
+	}
+}
+Response: 200 441.401 ms 
+
+Request: POST /api/auth/login at Tue Mar 14 2023 20:38:23 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis1@gmail.com"
+}
+Response Body:
+{
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NWE0NmQxM2ZkNzIwMjE2YTc4NmUiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc4ODM3MTAzLCJleHAiOjE2Nzg4NDQzMDN9.mgOudpKLCZt6eWdxHVw6OT9Jy6yPgoZqLLpKYNXNZxw",
+		"user": {
+			"_id": "64075a46d13fd720216a786e",
+			"name": "Luis Ge",
+			"age": 35,
+			"email": "luis1@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:37:42.067Z",
+			"updatedAt": "2023-03-07T15:37:42.067Z"
+		}
+	}
+}
+Response: 200 416.917 ms 
+
+Request: POST /api/auth/login at Wed Mar 15 2023 19:10:14 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"error": "USER_NOT_EXISTS"
+}
+Response: 404 99.798 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:02:08 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"msg": "Invalid value",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Invalid value",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Invalid value",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 15.242 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:03:05 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "luis2@gmail",
+			"msg": "Invalid value",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 5.684 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:03:44 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "luis2@gmail",
+			"msg": "Invalid value",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 26.741 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:04:00 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "luis2@gmail",
+			"msg": "Invalid value",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 15.362 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:05:12 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "luis2@gmail",
+			"msg": "Debe ser un email válido",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 16.226 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:06:37 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "luis2@gmail",
+			"msg": "Debe ser un email válido",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 15.097 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:06:45 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"msg": "Propiedad email debe existir",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "El email es obligatorio",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Debe ser un email válido",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 5.561 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:16:46 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"msg": "Propiedad email debe existir",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "El email es obligatorio",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Debe ser un email válido",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 16.442 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:51:17 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "abc",
+			"msg": "Propiedad email debe existir",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 23.197 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:51:23 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "abc",
+			"msg": "Propiedad email debe existir",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 8.332 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:53:50 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "abc",
+			"msg": "Propiedad email debe existir",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 19.837 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:55:05 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "abc",
+			"msg": "El password debe tener una longitúd válida. 6 y 15 caracteres",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 18.365 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:55:31 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "",
+			"msg": "El password es obligatorio",
+			"param": "password",
+			"location": "body"
+		},
+		{
+			"value": "",
+			"msg": "El password debe tener una longitúd válida. 6 y 15 caracteres",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 21.626 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:55:39 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MDE4MTM5LCJleHAiOjE2NzkwMjUzMzl9.VmdUkKP6q5xu5pyjE3dD3xU1zxkh9uuQoYVAXOps2dU",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 479.653 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 22:57:21 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": {
+		"msgResponse": "Ocurrió un problema al iniciar sesión",
+		"errorMessage": "database access"
+	}
+}
+Response: 500 25.458 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:13:34 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MDE5MjE0LCJleHAiOjE2NzkwMjY0MTR9.mXU6jabq3iKBLlWMvTsoFBQ2X6NUpIAVOaRf6I9rSzg",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 467.377 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:13:44 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"msg": "Propiedad email debe existir",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "El email es obligatorio",
+			"param": "email",
+			"location": "body"
+		},
+		{
+			"msg": "Debe ser un email válido",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 6.048 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:13:57 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com12"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "luis2@gmail.com12",
+			"msg": "Debe ser un email válido",
+			"param": "email",
+			"location": "body"
+		}
+	]
+}
+Response: 400 6.715 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:14:05 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis232424234324@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": {
+		"msgResponse": "Usuario no existe",
+		"errorMessage": ""
+	}
+}
+Response: 404 94.671 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:14:57 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc12",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": [
+		{
+			"value": "abc12",
+			"msg": "El password debe tener una longitúd válida. 6 y 15 caracteres",
+			"param": "password",
+			"location": "body"
+		}
+	]
+}
+Response: 400 2.966 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:15:03 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc12234",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "error",
+	"message": {
+		"msgResponse": "Usuario o password inválido",
+		"errorMessage": ""
+	}
+}
+Response: 401 414.744 ms 
+
+Request: POST /api/auth/login at Thu Mar 16 2023 23:33:59 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MDIwNDM5LCJleHAiOjE2NzkwMjc2Mzl9.WjNtlOZ5nLzvVO--hpXpzPwCIH7Ag66u15iIy_94wdc",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 445.709 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 00:06:24 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MDIyMzg0LCJleHAiOjE2NzkwMjk1ODR9.-9IQDU2FRJiRudM_ViQ4FyNotSSejZnwaDviVm3YPbQ",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 468.995 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 00:08:02 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MDIyNDgyLCJleHAiOjE2NzkwMjk2ODJ9.PsKZ-B9qDhijCK2_N5EsdFDJqKYYMq0lC6jlAKN9d10",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 459.606 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 21:27:05 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MDk5MjI1LCJleHAiOjE2NzkxMDY0MjV9.SlToYxeI-vRXrr_LihGJphCBxDH2uSesTMyfxR9j1rQ",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 500.638 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:05:17 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA1MTE3LCJleHAiOjE2NzkxMTIzMTd9.LLuDFKqsAAMCT6BqUpXbnIlhv96o5xRV9qDCFlZVoUM",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 476.095 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:17:35 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis2@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDEyNDI1N2RkZTNmNmMwMDA4ZmMwMDQiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA1ODU1LCJleHAiOjE2NzkxMTMwNTV9.8ATB1cQa7YE3dncwPckaawnEKTspqZ0vWM2xevqCwdQ",
+		"user": {
+			"_id": "64124257dde3f6c0008fc004",
+			"name": "Pedro",
+			"age": 35,
+			"email": "luis2@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-15T22:10:31.578Z",
+			"updatedAt": "2023-03-15T22:10:31.578Z"
+		}
+	}
+}
+Response: 200 456.333 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:20:50 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA2MDUwLCJleHAiOjE2NzkxMTMyNTB9.SGDkEpbWGRWf_s2HAAL4rZq2pKGJji1Kewij3FpugYQ",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 419.035 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:28:40 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA2NTIwLCJleHAiOjE2NzkxMTM3MjB9.gLqNyEJdhmnb5Fv6zaDVnavZ2_IxNoQU6Y0dlkbDrIU",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 433.649 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:38:45 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA3MTI1LCJleHAiOjE2NzkxMTQzMjV9.9jlXe_KIbqpYDbgipA3r3a8Y7mI4BCgbYyYPZce5-XY",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 488.117 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:42:00 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA3MzIwLCJleHAiOjE2NzkxMTQ1MjB9.Plhl0I-b0ZwxlBeP91sFamlTisfZwOCmHpJBxmcRHLE",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 427.692 ms 
+
+Request: POST /api/auth/login at Fri Mar 17 2023 23:44:05 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTA3NDQ1LCJleHAiOjE2NzkxMTQ2NDV9.HUm4W9OmiSBA6-adGD5FeBACYG8QMUvN9KcdwCOZxNQ",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 523.369 ms 
+
+Request: POST /api/auth/login at Sat Mar 18 2023 00:32:16 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MTEwMzM2LCJleHAiOjE2NzkxMTc1MzZ9.8KS6OI6Ykmfa-9dkhAd1Am0eGM71b_JN5HRXPNmXKag",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 471.139 ms 
+
+Request: POST /api/auth/login at Mon Mar 20 2023 21:38:09 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MzU5MDg5LCJleHAiOjE2NzkzNjYyODl9.1ltg8RBudBJoL7c-rAbRShxFIjzhEgC0_FdU5FlrHZg",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 491.050 ms 
+
+Request: POST /api/auth/login at Mon Mar 20 2023 21:39:21 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NDA3NTk2NGUwMGQzYzJkNTFkODhhYzYiLCJyb2xlIjpbInVzZXIiXSwiaWF0IjoxNjc5MzU5MTYxLCJleHAiOjE2NzkzNjYzNjF9.0hNzLNnSWqluYxahswL9CBsS7cnAwO2hy70EYXwg1I0",
+		"user": {
+			"_id": "64075964e00d3c2d51d88ac6",
+			"name": "Luis G",
+			"age": 35,
+			"email": "luis@gmail.com",
+			"role": [
+				"user"
+			],
+			"deleted": false,
+			"createdAt": "2023-03-07T15:33:56.983Z",
+			"updatedAt": "2023-03-07T15:33:56.983Z"
+		}
+	}
+}
+Response: 200 491.586 ms 
+
+Request: POST /api/auth/login at Tue Mar 21 2023 18:47:03 GMT-0300, IP: ::ffff:127.0.0.1, User Agent: Thunder Client (https://www.thunderclient.com)
+Request Body:
+{
+	"password": "abc123",
+	"email": "luis@gmail.com"
+}
+Response Body:
+{
+	"status": "success",
+	"data": {
+		"token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwicm9sZSI6ImFkbWluIiwiaWF0IjoxNjc5NDM1MjIzLCJleHAiOjE2Nzk0NDI0MjN9.NB5JuNJYGNdEpq8g-pw8inRbyABL2PZOwYX_T68Szdc",
+		"user": {
+			"id": 1,
+			"name": "Pedro",
+			"age": 35,
+			"email": "Pedro@gmail12.com",
+			"role": "admin",
+			"createdAt": "2023-03-09T17:20:12.000Z",
+			"updatedAt": "2023-03-09T17:20:12.000Z"
+		}
+	}
+}
+Response: 200 723.972 ms 
