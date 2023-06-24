@@ -8,6 +8,7 @@ Un usuario debe estar autenticado para poder publicar o votar por una idea.
 ## Análisis y Diseño
 
 - API RESTful - Node.js con Express
+- Ineyección de dependencias
 - Base de datos NoSQL - MongoDB con Mongoose
 - Autenticación JWT
 - Documentación - Swagger

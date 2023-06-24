@@ -1,6 +1,0 @@
-Los modelos hacen REFERENCIA al a ESTRUCTURA que EXISTIRÁ EN LA BD.
-
-BD RELACIONALES --> tablas, tipo de datos
-BD NO RELACIONALES --> coleccion, documentos, tipado (entero, string, etc)...
-
-reamos un modelo por acada una de las COLECCIONES que vayamos a usar
