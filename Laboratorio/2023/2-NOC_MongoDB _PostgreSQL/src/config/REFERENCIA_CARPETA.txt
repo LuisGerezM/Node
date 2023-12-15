@@ -1,0 +1,6 @@
+CONFIG:
+  - cosas GLOBALES.
+  - configuraciones
+  - loggers
+  - ejemplo de plugin para el manejo de AXIOS
+  - etc

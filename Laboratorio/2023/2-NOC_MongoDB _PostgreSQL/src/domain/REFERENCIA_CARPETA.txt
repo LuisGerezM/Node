@@ -1,0 +1,8 @@
+DOMAIN:
+  - reglas con las cuales va a regir mi aplicacion a un nivel ALTO, a un nivel MACRO, alejandose de las CAPAS externas.
+    
+    -> origenes de datos o datasources.
+    -> entidades (como lucen mis modelos) se apega mucho a la BD cuando estemos grabando.
+    -> repository que es como quiero yo poder trabajar con el datasources. 
+    -> use-cases, que son las acciones que se va a hacer. Cuando miramos un caso de uso ya deberiamos saber que es lo que hace, como funciona y demas.
+    

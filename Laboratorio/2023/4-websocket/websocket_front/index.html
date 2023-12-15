@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Websockets - <small>Status</small></h1>
+
+  <form>
+    <input type="text" placeholder="Encias mensaje" />
+    <button>Enviar</button>
+  </form>
+
+  <ul id="messages"></ul>
+
+  <script>
+    let socket = null;
+    const form = document.querySelector("form");
+    const input = document.querySelector("input");
+    const messagesElement = document.querySelector("#messages");
+    const statusElement = document.querySelector("small");
+
+    function sendMessage(message) {
+      //* console.log(message)
+      socket?.send(message);
+    }
+
+    function renderMessage(message) {
+      const li = document.createElement("li");
+      li.innerHTML = message;
+      messagesElement.prepend(li);
+    }
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      const message = input.value;
+      sendMessage(message);
+      input.value = null;
+    });
+
+    function connectToServer() {
+      socket = new WebSocket("ws://localhost:3000");
+
+      socket.onopen = (event) => {
+        //* TODO: console.log(event)
+        //* console.log("connected");
+
+        statusElement.innerText = "Online";
+      };
+
+      socket.onclose = (event) => {
+        //* TODO:  console.log(event)
+        //* console.log("Disconnected");
+
+        statusElement.innerText = "Offline";
+
+        //* TODO: cada segundo y medio intentaremos conectarlo --->> RECOMENDACION: ese "1500" se recomienda que sea multiplicado por un numero aleatorio, por si se llega a caer 1500 clientes entonces de esa forma NO INTENTARAN conectarse TODOS JUNTOS
+        // setTimeout(() => {
+        //   connectToServer()
+        // }, 1500);
+
+        const randomNumber = Math.floor(Math.random() * (7000 - 1500) + 2000);
+        console.log(randomNumber);
+        setTimeout(() => {
+          connectToServer();
+        }, randomNumber);
+      };
+
+      socket.onmessage = (event) => {
+        const payload = JSON.parse(event.data);
+        console.log(payload);
+        console.log(payload.payload);
+
+        renderMessage(payload.payload);
+      };
+    }
+
+    /** //* TODO:
+     levantamos el sv
+    luisfergm@luisfergm-IdeaPad-3-15ITL6:~/Escritorio/Desarrollo/aDESPLEGARenGIT/BackEnd/BackEndRepo/node/curso_fernando_herrera/curso/seccion 26 - websockets/por_mi/web_sockets/websocket_front$ npx http-server -o
+
+
+      ->> Open: http://127.0.0.1:8080
+    */
+
+    connectToServer();   
+  </script>
+</body>
+</html>
+

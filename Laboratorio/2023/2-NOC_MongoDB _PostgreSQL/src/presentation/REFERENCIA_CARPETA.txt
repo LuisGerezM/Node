@@ -1,0 +1,5 @@
+PRESENTATION:
+  - Aplicacion de consola, o nuestro servicios de EXPRES, son las cosas que están cerca de los usuarios. Por ej el mail service lo dejamos en presentation para tomar el archivo y usarlo directamente. Generalmente vamos a llamar casos de uso.
+
+    -> datasource: es donde literalmente hacemos nuestro trabajo, aqui llamamos al origen de dato, recuperamos informacion, etc.
+    -> tratemos de EVITAR dependencias OCULTAS

@@ -1,0 +1,6 @@
+INFRAESTRUCTURE:
+  - Aqui es donde tenemos las IMPLEMENTACIONES de nuestro repositorios y el datasource
+
+    -> datasource: es donde literalmente hacemos nuestro trabajo, aqui llamamos al origen de dato, recuperamos informacion, etc.
+    -> repositorios: trabajan con el datasource, permiten cambiar los datasource e interactuamos con él.
+    
