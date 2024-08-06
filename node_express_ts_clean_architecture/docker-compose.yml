@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+
+  postgres-db:
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB_PRD}
+      POSTGRES_USER: ${POSTGRES_USER_DB_PRD}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD_DB_PRD}
+    volumes:
+      - ./postgres-db:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT_PRD}:5432
+
+  postgres-db-dev:
+    image: postgres:15.3
+    restart: always
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB_DEV}
+      POSTGRES_USER: ${POSTGRES_USER_DB_DEV}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD_DB_DEV}
+    volumes:
+      - ./postgres-db-dev:/var/lib/postgresql/data
+    ports:
+      - ${POSTGRES_PORT_DEV}:5432
