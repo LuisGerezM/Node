@@ -15,7 +15,9 @@ const getRecordForWorkout = (req, res) => {
     const record = recordService.getRecordForWorkout(workoutId);
     res.send({ status: "OK", data: record });
   } catch (error) {
-    res.status(error.status || 500).send({ status: "FAILED", message: error.message || "Internal error." });
+    res
+      .status(error.status || 500)
+      .send({ status: "FAILED", message: error.message || "Internal error." });
   }
 };
 
