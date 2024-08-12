@@ -21,10 +21,53 @@ export class SequelizeClient {
 	}
 
 	//* modelos
-	private defineModelsAndRelations(db: dbType) {
-		logger.info(`${this.location} defineModelsAndRelations init`);
+	private defineModels(db: dbType) {
+		logger.info(`${this.location} defineModels init`);
 
 		db.User = userModelDB({ DataTypes, db: db.dbConnection });
+
+		return db;
+	}
+
+	//* relations
+	private defineRelations(db: dbType) {
+		logger.info(`${this.location} defineRelations init`);
+
+		//* for this example I havent relationship
+
+		return db;
+	}
+
+	private async connectDB(db: dbType) {
+		logger.info(`${this.location} connectDB init`);
+
+		db.dbConnection = new Sequelize(
+			envs.POSTGRES_DB,
+			envs.POSTGRES_USER_DB,
+			envs.POSTGRES_PASSWORD_DB,
+			{
+				host: envs.POSTGRES_HOST,
+				port: envs.POSTGRES_PORT,
+				dialect: "postgres",
+				logging: false,
+			}
+		);
+
+		db.Sequelize = Sequelize;
+
+		await db.dbConnection.authenticate();
+
+		if (!db) {
+			logger.info(`${this.location} Failed to create database client`);
+
+			throw CustomError.excecuteException({
+				message:
+					"Error connecting DB: Failed to create database client.",
+				statusCode: 500,
+			});
+		}
+
+		logger.info(`${this.location} connectDB - client created`);
 
 		return db;
 	}
@@ -32,41 +75,14 @@ export class SequelizeClient {
 	public async startDB() {
 		logger.info(`${this.location} start init`);
 
-		const db: dbType = {};
+		let db: dbType = {};
 		try {
-			db.dbConnection = new Sequelize(
-				envs.POSTGRES_DB,
-				envs.POSTGRES_USER_DB,
-				envs.POSTGRES_PASSWORD_DB,
-				{
-					host: envs.POSTGRES_HOST,
-					port: envs.POSTGRES_PORT,
-					dialect: "postgres",
-					logging: false,
-				}
-			);
-
-			db.Sequelize = Sequelize;
-
-			await db.dbConnection.authenticate();
-
-			if (!db) {
-				logger.info(
-					`${this.location} Failed to create database client`
-				);
-
-				throw CustomError.excecuteException({
-					message:
-						"Error connecting DB: Failed to create database client.",
-					statusCode: 500,
-				});
-			}
-
-			const searchModelsAndRelations = this.defineModelsAndRelations(db);
+			db = await this.connectDB(db);
+			db = this.defineModels(db);
+			db = this.defineRelations(db);
 
 			logger.info(`${this.location} BD conected - client created`);
-
-			return { ...searchModelsAndRelations };
+			return db;
 		} catch (error) {
 			logger.info(`${this.location} - Error connecting DB`);
 

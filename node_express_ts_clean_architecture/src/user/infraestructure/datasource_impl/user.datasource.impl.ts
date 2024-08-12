@@ -28,8 +28,6 @@ export class UserDatasourceImpl implements UserDatasource {
 				},
 			});
 
-			console.log("findUserData L41", findUserData);
-
 			if (!findUserData) {
 				throw CustomError.excecuteException({
 					message: `user with id ${id} not found`,

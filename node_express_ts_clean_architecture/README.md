@@ -1,6 +1,4 @@
-# Rest Project + TypeScript
-
-Este proyecto es de práctica es por ello que algunas veces se usan clases y otras objetos, algunas veces se realiza inyección de dependencias u otras métodos estáticos.
+# Rest Project + clean architecture + TypeScript
 
 ## Instalación
 
