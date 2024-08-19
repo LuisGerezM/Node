@@ -15,7 +15,6 @@ export class UserDatasourceImpl implements UserDatasource {
 	): Promise<{ status: string; user: UserEntity }> {
 		logger.info(`${this.location} getUserById init`);
 
-		let querySql: string | null = null;
 		let client: { [key: string]: any } = {};
 
 		try {
@@ -23,9 +22,6 @@ export class UserDatasourceImpl implements UserDatasource {
 
 			const findUserData = await client.User.findOne({
 				where: { id_user: id, active: 1 },
-				logging: (sql: string) => {
-					querySql = sql.split("Executing (default):")[1].trim();
-				},
 			});
 
 			if (!findUserData) {
@@ -42,20 +38,7 @@ export class UserDatasourceImpl implements UserDatasource {
 		} catch (error) {
 			logger.info(`${this.location} getUserById catch`);
 
-			console.log(
-				"location: `${this.location} getUserById` L57",
-				`${this.location} getUserById`
-			);
-
-			const errorWithLocation = CustomError.addOtherInfoOfInterestToError(
-				{
-					error,
-					location: `${this.location} getUserById`,
-					querySql,
-				}
-			);
-
-			throw errorWithLocation;
+			throw error;
 		} finally {
 			await this.clientDB.closeDB(client);
 		}

@@ -44,6 +44,7 @@ export class UserController {
 			baseResponse.sendReponse(res);
 		} catch (error) {
 			logger.info("UserController getUserById catch");
+			logger.info(error);
 			next(error);
 		}
 	};

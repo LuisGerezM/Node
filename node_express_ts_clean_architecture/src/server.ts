@@ -27,7 +27,7 @@ export class Server {
 		this.app.use(express.json());
 		this.app.use(express.urlencoded({ extended: true })); // x-www-
 
-		//* use the defined routes
+		//* Usar las rutas definidas
 		this.app.use(this.routes);
 
 		//* errors middlewares
