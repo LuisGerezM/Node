@@ -52,19 +52,15 @@ export class AuthMiddleware {
 				logger.info(`${AuthMiddleware.location} payload.id:`);
 				logger.info(payload.id);
 
+				// TODO: añadir aqui el id del usuario al req
 				(req as any).userID = payload.id;
 
 				next();
 			} catch (error) {
 				logger.info(`${AuthMiddleware.location} validateJWT error`);
+				logger.info(error);
 
-				const errorWithLocation =
-					CustomError.addOtherInfoOfInterestToError({
-						error,
-						location: `${AuthMiddleware.location} validateJWT`,
-					});
-
-				next(errorWithLocation);
+				next(error);
 			}
 		};
 	}
@@ -73,7 +69,6 @@ export class AuthMiddleware {
 		return async (req: Request, res: Response, next: NextFunction) => {
 			logger.info(`${AuthMiddleware.location} validateUserIsActive init`);
 
-			let querySql: string | null = null;
 			let client: { [key: string]: any } = {};
 
 			try {
@@ -84,9 +79,6 @@ export class AuthMiddleware {
 				const findUserData = await client.User.findOne({
 					where: { id_user: userID, active: 1 },
 					attributes: ["id_user", "active"],
-					logging: (sql: string) => {
-						querySql = sql.split("Executing (default):")[1].trim();
-					},
 				});
 
 				console.log("findUserData L93", findUserData);
@@ -112,15 +104,9 @@ export class AuthMiddleware {
 				logger.info(
 					`${AuthMiddleware.location} validateUserIsActive error`
 				);
+				logger.info(error);
 
-				const errorWithLocation =
-					CustomError.addOtherInfoOfInterestToError({
-						error,
-						location: `${AuthMiddleware.location} validateUserIsActive`,
-						querySql,
-					});
-
-				next(errorWithLocation);
+				next(error);
 			} finally {
 				await clientDB.closeDB(client);
 			}

@@ -1,12 +1,5 @@
 /* eslint-disable no-unused-vars */
 import { logger } from "@/config";
-
-type addOtherInfoOfInterestToErrorType = {
-	error: unknown | CustomError;
-	location: string;
-	querySql?: string | null;
-};
-
 export class CustomError extends Error {
 	public static locationCustomError = "CustomError";
 	public static status = "error";
@@ -16,109 +9,57 @@ export class CustomError extends Error {
 		public readonly statusName: string,
 		public readonly statusCode: number,
 		public readonly message: string,
-		public location: string,
 		public querySql?: string | null
 	) {
 		super(message);
 	}
 
-	static badRequest(message: string, location: string) {
-		return new CustomError(
-			CustomError.status,
-			"badRequest",
-			400,
-			message,
-			location
-		);
+	static badRequest(message: string) {
+		return new CustomError(CustomError.status, "badRequest", 400, message);
 	}
 
-	static unauthorized(message: string, location: string) {
+	static unauthorized(message: string) {
 		return new CustomError(
 			CustomError.status,
 			"unauthorized",
 			401,
-			message,
-			location
+			message
 		);
 	}
 
-	static forbidden(message: string, location: string) {
-		return new CustomError(
-			CustomError.status,
-			"forbidden",
-			403,
-			message,
-			location
-		);
+	static forbidden(message: string) {
+		return new CustomError(CustomError.status, "forbidden", 403, message);
 	}
 
-	static preconditionFailed(message: string, location: string) {
+	static preconditionFailed(message: string) {
 		return new CustomError(
 			CustomError.status,
 			"preconditionFailed",
 			412,
-			message,
-			location
+			message
 		);
 	}
 
-	static notAcceptable(message: string, location: string) {
+	static notAcceptable(message: string) {
 		return new CustomError(
 			CustomError.status,
 			"notAcceptable",
 			406,
-			message,
-			location
+			message
 		);
 	}
 
-	static notFound(message: string, location: string) {
-		return new CustomError(
-			CustomError.status,
-			"notFound",
-			404,
-			message,
-			location
-		);
+	static notFound(message: string) {
+		return new CustomError(CustomError.status, "notFound", 404, message);
 	}
 
-	static internalServer(
-		message: string = "Internal Server Error",
-		location: string
-	) {
+	static internalServer(message: string = "Internal Server Error") {
 		return new CustomError(
 			CustomError.status,
 			"internalServerError",
 			500,
-			message,
-			location
+			message
 		);
-	}
-
-	static addOtherInfoOfInterestToError({
-		error,
-		location,
-		querySql = null,
-	}: addOtherInfoOfInterestToErrorType) {
-		if (error instanceof CustomError) {
-			error.location = location;
-			error.querySql = querySql;
-		} else {
-			const message =
-				error instanceof Error
-					? error.message
-					: "An unknown error occurred";
-
-			error = new CustomError(
-				CustomError.status,
-				"internalServerError",
-				500,
-				message,
-				location,
-				querySql
-			);
-		}
-		return error;
 	}
 
 	static excecuteException(error: { [key: string]: any }) {
@@ -128,22 +69,19 @@ export class CustomError extends Error {
 
 		switch (error.statusCode) {
 			case 400:
-				return CustomError.badRequest(error.message, error.location);
+				return CustomError.badRequest(error.message);
 			case 401:
-				return CustomError.unauthorized(error.message, error.location);
+				return CustomError.unauthorized(error.message);
 			case 403:
-				return CustomError.forbidden(error.message, error.location);
+				return CustomError.forbidden(error.message);
 			case 404:
-				return CustomError.notFound(error.message, error.location);
+				return CustomError.notFound(error.message);
 			case 406:
-				return CustomError.notFound(error.message, error.location);
+				return CustomError.notFound(error.message);
 			case 412:
-				return CustomError.notFound(error.message, error.location);
+				return CustomError.notFound(error.message);
 			default:
-				return CustomError.internalServer(
-					error.message,
-					error.location
-				);
+				return CustomError.internalServer(error.message);
 		}
 	}
 }

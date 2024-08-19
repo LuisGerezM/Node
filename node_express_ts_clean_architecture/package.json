@@ -1,5 +1,5 @@
 {
-	"name": "node_express_ts_clean_architecture",
+	"name": "1-drcentral_backend",
 	"version": "1.0.0",
 	"main": "index.js",
 	"scripts": {
@@ -8,15 +8,10 @@
 		"start": "npm run build && node dist/app.js",
 		"eslint": "eslint src/** --fix"
 	},
-	"keywords": [
-		"node",
-		"ts",
-		"express",
-		"clean architecture"
-	],
-	"author": "Gerez Martinez Luis",
+	"keywords": [],
+	"author": "",
 	"license": "ISC",
-	"description": "This repository represents one way to implement the clean architecture",
+	"description": "",
 	"devDependencies": {
 		"@eslint/js": "^9.8.0",
 		"@types/express": "^4.17.21",

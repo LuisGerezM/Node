@@ -20,7 +20,7 @@ export class SequelizeClient {
 		return SequelizeClient.instance;
 	}
 
-	//* modelos
+	//* models
 	private defineModels(db: dbType) {
 		logger.info(`${this.location} defineModels init`);
 
@@ -86,14 +86,7 @@ export class SequelizeClient {
 		} catch (error) {
 			logger.info(`${this.location} - Error connecting DB`);
 
-			const errorWithLocation = CustomError.addOtherInfoOfInterestToError(
-				{
-					error,
-					location: `${this.location} start`,
-				}
-			);
-
-			throw errorWithLocation;
+			throw error;
 		}
 	}
 
@@ -115,15 +108,9 @@ export class SequelizeClient {
 			logger.info(`${this.location} connection closed successfully`);
 		} catch (error) {
 			logger.error(`${this.location} error closing connection`, error);
+			logger.info(error);
 
-			const errorWithLocation = CustomError.addOtherInfoOfInterestToError(
-				{
-					error,
-					location: `${this.location} close`,
-				}
-			);
-
-			throw errorWithLocation;
+			throw error;
 		}
 	}
 }
